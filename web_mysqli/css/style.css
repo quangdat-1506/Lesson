@@ -1,0 +1,172 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	font-family: sans-serif;
+}
+
+.wrapper{
+	border: 1px solid #000;
+	height: auto;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header{
+	background-image: url("../images/banner.jpg");
+	background-size: 100% 180px;
+	background-repeat: no-repeat;
+	border: 1px solid #ff80ff;
+	height: 180px;
+	width: 100%;
+/*	background: #ff0080;*/
+}
+
+.menu{
+	border: 1px solid #1aff8c;
+	height: 50px;
+	width: 100%;
+	background: #444444;
+}
+
+ul.list_menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 25px;
+	margin-left: 40px;
+}
+
+ul.list_menu li {
+	float: left;
+	margin: 7px;
+	padding: 5px;
+}
+
+ul.list_menu li a {
+	text-decoration: none;	
+	color:#fff;
+}
+
+ul.list_menu li a:hover{
+	opacity: 0.5;
+}
+
+.box-submenu {
+	display: none;
+	width: 150px;
+}
+
+.box-submenu ul li {
+	list-style: none;
+}
+
+ul.list_menu li:hover .box-submenu {
+	display:block;
+	background:#444444;
+	position:absolute;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+ul.list_menu li:hover .box-submenu ul {
+	display:block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.list_menu li:hover .box-submenu ul li {
+	width: 100px;
+	text-align: left;
+	border-bottom: dotted 1px #fff;
+	background: transparent;
+	border-radius: 0;
+	padding: 15px;
+	margin: 10px;	
+}
+
+#main{
+	border: 1px solid #00ff80;
+	height: 400px;
+	width: 100%;
+	display: flex;
+
+}
+
+.sidebar{
+	border: 1px solid #000066;
+	height: 400px;
+	width: 20%;
+/*	margin-top: 5px;*/
+	margin-left: 5px;
+}
+
+ul.list_sidebar {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 25px;
+	margin-left: 40px;
+}
+
+ul.list_sidebar li {
+/*	float: left;*/
+	margin: 7px;
+	padding: 5px;
+}
+
+ul.list_sidebar li a {
+	text-decoration: none;
+}
+
+ul.list_sidebar li a:hover{
+	color: #000;
+}
+
+.maincontent{
+	border: 1px solid #ff0000;
+	height: 400px;
+/*	width: 79%;*/
+	width: 951px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: right;
+}
+
+ul.product_list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+	display: flex;	
+	justify-content: space-around;
+}
+
+ul.product_list li {
+	width: 700px;
+	margin: 5px;
+	text-align: center;
+}
+
+ul.product_list li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+}
+
+ul.product_list li .title_product:hover {
+	opacity: 0.6;
+}
+
+ul.product_list li img {
+	width: 100%;
+}
+
+.footer{
+	border: 1px solid #ff1a8c;
+	height: 150px;
+	width: 100%;
+	background: #53382c;
+}
